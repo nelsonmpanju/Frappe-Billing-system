@@ -1,0 +1,84 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-05 16:52:49.443616",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "mikrotik_device",
+  "timestamp",
+  "api_endpoint",
+  "column_break_spnh",
+  "status",
+  "request_data",
+  "response_data",
+  "error_message"
+ ],
+ "fields": [
+  {
+   "fieldname": "mikrotik_device",
+   "fieldtype": "Link",
+   "label": "Mikrotik Device",
+   "options": "Mikrotik Device"
+  },
+  {
+   "fieldname": "timestamp",
+   "fieldtype": "Datetime",
+   "label": "Timestamp"
+  },
+  {
+   "fieldname": "api_endpoint",
+   "fieldtype": "Data",
+   "label": "API Endpoint"
+  },
+  {
+   "fieldname": "column_break_spnh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "Status",
+   "options": "Success\nFailure"
+  },
+  {
+   "fieldname": "request_data",
+   "fieldtype": "Small Text",
+   "label": "Request Data"
+  },
+  {
+   "fieldname": "response_data",
+   "fieldtype": "Small Text",
+   "label": "Response Data"
+  },
+  {
+   "fieldname": "error_message",
+   "fieldtype": "Small Text",
+   "label": "Error Message"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-05 17:00:00.309207",
+ "modified_by": "Administrator",
+ "module": "Billing System",
+ "name": "Mikrotik API Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

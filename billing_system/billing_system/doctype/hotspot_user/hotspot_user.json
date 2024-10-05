@@ -1,0 +1,122 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:session_id",
+ "creation": "2024-10-05 16:43:03.489948",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "session_id",
+  "voucher_code",
+  "ip_address",
+  "device_mac_address",
+  "column_break_gckd",
+  "login_time",
+  "logout_time",
+  "duration",
+  "statistics_section",
+  "data_uploaded_mb",
+  "column_break_kzia",
+  "data_downloaded_mb"
+ ],
+ "fields": [
+  {
+   "fieldname": "voucher_code",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Voucher Code",
+   "options": "Voucher Code"
+  },
+  {
+   "fieldname": "device_mac_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Device MAC Address",
+   "unique": 1
+  },
+  {
+   "fieldname": "column_break_gckd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "login_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Login Time"
+  },
+  {
+   "fieldname": "logout_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Logout Time"
+  },
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "IP Address"
+  },
+  {
+   "fieldname": "session_id",
+   "fieldtype": "Data",
+   "label": "Session ID",
+   "unique": 1
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Duration"
+  },
+  {
+   "fieldname": "statistics_section",
+   "fieldtype": "Section Break",
+   "label": "Statistics"
+  },
+  {
+   "fieldname": "data_uploaded_mb",
+   "fieldtype": "Data",
+   "label": "Data Uploaded (MB)"
+  },
+  {
+   "fieldname": "column_break_kzia",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "data_downloaded_mb",
+   "fieldtype": "Data",
+   "label": "Data Downloaded (MB)"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-05 17:25:09.252555",
+ "modified_by": "Administrator",
+ "module": "Billing System",
+ "name": "Hotspot User",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
