@@ -1,0 +1,19 @@
+{
+ "content": null,
+ "creation": "2024-10-09 08:58:11.177866",
+ "docstatus": 0,
+ "doctype": "Page",
+ "idx": 0,
+ "modified": "2024-10-09 08:58:11.177866",
+ "modified_by": "Administrator",
+ "module": "Billing System",
+ "name": "device-dashboard",
+ "owner": "Administrator",
+ "page_name": "device-dashboard",
+ "roles": [],
+ "script": null,
+ "standard": "Yes",
+ "style": null,
+ "system_page": 0,
+ "title": "Dashboard"
+}

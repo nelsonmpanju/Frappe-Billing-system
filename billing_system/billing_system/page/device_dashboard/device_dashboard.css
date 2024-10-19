@@ -1,0 +1,87 @@
+/* Overall container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* padding: 20px; */
+}
+
+/* Router Selection */
+#router-select {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* Cards for Statistics */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    margin-bottom: 20px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Font Styling for Statistics */
+.display-4 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* Resource Information Progress Bars */
+.progress {
+    height: 18px;
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    font-size: 0.8rem;
+    line-height: 18px;
+    padding: 2px 10px;
+    border-radius: 10px;
+}
+
+/* Log Section */
+.scrollable-log {
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 0.9rem;
+}
+
+/* System Information and Logs Layout */
+.card-body p {
+    margin: 0 0 10px;
+    font-size: 1rem;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+}

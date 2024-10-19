@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class MikrotikAPILog(Document):
+class RouterConfig(Document):
 	pass

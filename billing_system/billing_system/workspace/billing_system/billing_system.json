@@ -1,6 +1,6 @@
 {
  "charts": [],
- "content": "[{\"id\":\"NFy6uiEi8R\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Hotspot Billing System</span>\",\"col\":12}},{\"id\":\"aM3wtSVY_4\",\"type\":\"card\",\"data\":{\"card_name\":\"Voucher Management\",\"col\":4}},{\"id\":\"EAf1qXMlxx\",\"type\":\"card\",\"data\":{\"card_name\":\"Captive Portal Management\",\"col\":4}},{\"id\":\"_Z9P7mmpKy\",\"type\":\"card\",\"data\":{\"card_name\":\"User Authentication and Access\",\"col\":4}},{\"id\":\"ioqb78oy7H\",\"type\":\"card\",\"data\":{\"card_name\":\"Mikrotik Integration\",\"col\":4}}]",
+ "content": "[{\"id\":\"NFy6uiEi8R\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Hotspot Billing System</span>\",\"col\":12}},{\"id\":\"3TH_0eP5MJ\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Router Dashboard\",\"col\":12}},{\"id\":\"fajwySq9fh\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"aM3wtSVY_4\",\"type\":\"card\",\"data\":{\"card_name\":\"Voucher Management\",\"col\":4}},{\"id\":\"_Z9P7mmpKy\",\"type\":\"card\",\"data\":{\"card_name\":\"Stats\",\"col\":4}},{\"id\":\"ioqb78oy7H\",\"type\":\"card\",\"data\":{\"card_name\":\"Mikrotik Integration\",\"col\":4}}]",
  "creation": "2024-10-05 16:39:28.645387",
  "custom_blocks": [],
  "docstatus": 0,
@@ -16,8 +16,56 @@
   {
    "hidden": 0,
    "is_query_report": 0,
+   "label": "Stats",
+   "link_count": 1,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Router Status",
+   "link_count": 0,
+   "link_to": "Router Status",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Mikrotik Integration",
+   "link_count": 2,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Router",
+   "link_count": 0,
+   "link_to": "Router",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Router Config",
+   "link_count": 0,
+   "link_to": "Router Config",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
    "label": "Voucher Management",
-   "link_count": 3,
+   "link_count": 4,
    "link_type": "DocType",
    "onboard": 0,
    "type": "Card Break"
@@ -55,72 +103,15 @@
   {
    "hidden": 0,
    "is_query_report": 0,
-   "label": "User Authentication and Access",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Hotspot User",
+   "label": "Voucher Sync Log",
    "link_count": 0,
-   "link_to": "Hotspot User",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Mikrotik Integration",
-   "link_count": 2,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Mikrotik Device",
-   "link_count": 0,
-   "link_to": "Mikrotik Device",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": " Mikrotik API Log",
-   "link_count": 0,
-   "link_to": "Mikrotik API Log",
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Link"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Captive Portal Management",
-   "link_count": 1,
-   "link_type": "DocType",
-   "onboard": 0,
-   "type": "Card Break"
-  },
-  {
-   "hidden": 0,
-   "is_query_report": 0,
-   "label": "Captive Portal Page",
-   "link_count": 0,
-   "link_to": "Captive Portal Page",
+   "link_to": "Voucher Sync Log",
    "link_type": "DocType",
    "onboard": 0,
    "type": "Link"
   }
  ],
- "modified": "2024-10-05 17:35:02.847329",
+ "modified": "2024-10-19 14:46:51.966974",
  "modified_by": "Administrator",
  "module": "Billing System",
  "name": "Billing System",
@@ -130,7 +121,15 @@
  "public": 1,
  "quick_lists": [],
  "roles": [],
- "sequence_id": 28.0,
- "shortcuts": [],
+ "sequence_id": 1.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Router Dashboard",
+   "link_to": "device-dashboard",
+   "type": "Page"
+  }
+ ],
  "title": "Billing System"
 }

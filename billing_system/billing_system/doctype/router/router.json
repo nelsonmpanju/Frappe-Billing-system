@@ -76,7 +76,7 @@
  "modified": "2024-10-05 16:56:33.427982",
  "modified_by": "Administrator",
  "module": "Billing System",
- "name": "Mikrotik Device",
+ "name": "Router",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [

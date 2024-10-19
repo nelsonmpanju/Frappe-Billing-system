@@ -8,16 +8,23 @@
  "field_order": [
   "batch_name",
   "voucher_plan",
-  "quantity",
   "column_break_wbae",
-  "status",
-  "generation_date"
+  "generation_date",
+  "router",
+  "amended_from",
+  "section_break_iwdd",
+  "quantity",
+  "name_length",
+  "column_break_kdnp",
+  "characters",
+  "prefix"
  ],
  "fields": [
   {
    "fieldname": "batch_name",
    "fieldtype": "Data",
    "label": "Batch Name",
+   "reqd": 1,
    "unique": 1
   },
   {
@@ -26,38 +33,86 @@
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Voucher Plan",
-   "options": "Voucher Plan"
+   "options": "Voucher Plan",
+   "reqd": 1
   },
   {
    "fieldname": "quantity",
    "fieldtype": "Int",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Quantity"
+   "label": "Quantity",
+   "reqd": 1
   },
   {
    "fieldname": "column_break_wbae",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "status",
-   "fieldtype": "Select",
-   "in_list_view": 1,
-   "in_standard_filter": 1,
-   "label": "Status",
-   "options": "Active\nExpired\nDepleted"
-  },
-  {
+   "default": "Today",
    "fieldname": "generation_date",
    "fieldtype": "Date",
    "in_list_view": 1,
    "in_standard_filter": 1,
    "label": "Generation Date"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Voucher Batch",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "router",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Router",
+   "options": "Router",
+   "reqd": 1
+  },
+  {
+   "fieldname": "name_length",
+   "fieldtype": "Select",
+   "label": "Name Length",
+   "options": "4\n5\n6\n7\n8"
+  },
+  {
+   "fieldname": "characters",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Characters",
+   "options": "abcd\nABCD\nAbCd\n5ab2c34cd\n5AB2C3CD4\n1234567"
+  },
+  {
+   "fieldname": "section_break_iwdd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_kdnp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "prefix",
+   "fieldtype": "Data",
+   "label": "Prefix",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-10-05 16:33:03.549486",
+ "is_submittable": 1,
+ "links": [
+  {
+   "link_doctype": "Voucher Code",
+   "link_fieldname": "voucher_batch"
+  }
+ ],
+ "modified": "2024-10-17 12:33:47.575029",
  "modified_by": "Administrator",
  "module": "Billing System",
  "name": "Voucher Batch",

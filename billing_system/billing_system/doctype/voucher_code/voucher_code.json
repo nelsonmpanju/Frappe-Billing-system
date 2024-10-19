@@ -11,9 +11,9 @@
   "voucher_plan",
   "column_break_pido",
   "status",
+  "router",
   "activation_date",
-  "expiration_date",
-  "assigned_to"
+  "expiration_date"
  ],
  "fields": [
   {
@@ -67,16 +67,17 @@
    "label": "Expiration Date"
   },
   {
-   "fieldname": "assigned_to",
-   "fieldtype": "Data",
+   "fieldname": "router",
+   "fieldtype": "Link",
    "in_list_view": 1,
    "in_standard_filter": 1,
-   "label": "Assigned To"
+   "label": "Router",
+   "options": "Router"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-10-05 16:38:09.450916",
+ "modified": "2024-10-16 22:34:26.951539",
  "modified_by": "Administrator",
  "module": "Billing System",
  "name": "Voucher Code",

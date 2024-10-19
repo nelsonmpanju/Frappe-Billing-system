@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class HotspotUser(Document):
+class Router(Document):
 	pass

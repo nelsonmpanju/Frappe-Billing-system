@@ -61,8 +61,13 @@
   }
  ],
  "index_web_pages_for_search": 1,
- "links": [],
- "modified": "2024-10-05 16:33:31.756739",
+ "links": [
+  {
+   "link_doctype": "Voucher Code",
+   "link_fieldname": "voucher_plan"
+  }
+ ],
+ "modified": "2024-10-17 12:38:31.475449",
  "modified_by": "Administrator",
  "module": "Billing System",
  "name": "Voucher Plan",

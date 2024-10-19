@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestHotspotUser(FrappeTestCase):
+class TestRouter(FrappeTestCase):
 	pass

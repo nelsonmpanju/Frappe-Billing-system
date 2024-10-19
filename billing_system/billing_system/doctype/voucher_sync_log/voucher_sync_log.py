@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class AssociatedMikrotikDevices(Document):
+class VoucherSyncLog(Document):
 	pass

@@ -1,0 +1,64 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-10-16 22:09:20.508084",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "router",
+  "column_break_kdaa",
+  "sync_timestamp",
+  "section_break_urdd",
+  "data"
+ ],
+ "fields": [
+  {
+   "fieldname": "sync_timestamp",
+   "fieldtype": "Datetime",
+   "label": "Sync Timestamp"
+  },
+  {
+   "fieldname": "router",
+   "fieldtype": "Link",
+   "label": "Router",
+   "options": "Router"
+  },
+  {
+   "fieldname": "data",
+   "fieldtype": "Small Text",
+   "label": "Data"
+  },
+  {
+   "fieldname": "column_break_kdaa",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_urdd",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-16 22:11:59.090456",
+ "modified_by": "Administrator",
+ "module": "Billing System",
+ "name": "Voucher Sync Log",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

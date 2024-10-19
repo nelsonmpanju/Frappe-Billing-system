@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:router",
+ "creation": "2024-10-16 22:05:02.979693",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "router",
+  "router_ip",
+  "api_key"
+ ],
+ "fields": [
+  {
+   "fieldname": "router",
+   "fieldtype": "Link",
+   "label": "Router",
+   "options": "Router",
+   "unique": 1
+  },
+  {
+   "fieldname": "router_ip",
+   "fieldtype": "Data",
+   "label": "Router IP"
+  },
+  {
+   "fieldname": "api_key",
+   "fieldtype": "Data",
+   "label": "API Key"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-16 22:07:04.898019",
+ "modified_by": "Administrator",
+ "module": "Billing System",
+ "name": "Router Config",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

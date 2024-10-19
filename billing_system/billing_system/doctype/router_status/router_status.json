@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:router_name",
+ "creation": "2024-10-16 21:50:49.578651",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "details_section",
+  "router_name",
+  "column_break_mpoo",
+  "active_users",
+  "uptime",
+  "outdated",
+  "router_health_section",
+  "cpu_load",
+  "health",
+  "column_break_apjh",
+  "memory",
+  "hdd",
+  "internet_speed_section",
+  "tx_speed",
+  "column_break_eizb",
+  "rx_speed"
+ ],
+ "fields": [
+  {
+   "fieldname": "router_name",
+   "fieldtype": "Link",
+   "label": "Router",
+   "options": "Router",
+   "unique": 1
+  },
+  {
+   "fieldname": "active_users",
+   "fieldtype": "Int",
+   "label": "Active Users"
+  },
+  {
+   "fieldname": "uptime",
+   "fieldtype": "Time",
+   "label": "Uptime"
+  },
+  {
+   "fieldname": "tx_speed",
+   "fieldtype": "Float",
+   "label": "Tx Speed"
+  },
+  {
+   "fieldname": "rx_speed",
+   "fieldtype": "Float",
+   "label": "Rx Speed"
+  },
+  {
+   "default": "0",
+   "fieldname": "outdated",
+   "fieldtype": "Check",
+   "label": "Outdated"
+  },
+  {
+   "fieldname": "column_break_mpoo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "details_section",
+   "fieldtype": "Section Break",
+   "label": "Details"
+  },
+  {
+   "fieldname": "router_health_section",
+   "fieldtype": "Section Break",
+   "label": "Router Health"
+  },
+  {
+   "fieldname": "cpu_load",
+   "fieldtype": "Float",
+   "label": "CPU Load (%)"
+  },
+  {
+   "fieldname": "health",
+   "fieldtype": "Data",
+   "label": "Health"
+  },
+  {
+   "fieldname": "column_break_apjh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "memory",
+   "fieldtype": "Float",
+   "label": "Memory (MB)"
+  },
+  {
+   "fieldname": "hdd",
+   "fieldtype": "Float",
+   "label": "HDD Usage (MB)"
+  },
+  {
+   "fieldname": "internet_speed_section",
+   "fieldtype": "Section Break",
+   "label": "Internet Speed"
+  },
+  {
+   "fieldname": "column_break_eizb",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-10-18 13:04:49.540984",
+ "modified_by": "Administrator",
+ "module": "Billing System",
+ "name": "Router Status",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

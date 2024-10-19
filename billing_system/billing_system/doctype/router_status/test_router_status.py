@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class TestMikrotikDevice(FrappeTestCase):
+class TestRouterStatus(FrappeTestCase):
 	pass
